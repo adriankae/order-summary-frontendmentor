@@ -1,0 +1,192 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #cdd8ff;
+}
+
+.frame {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.image-container img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.summary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex: 1; */
+    /* height: 100%; */
+}
+
+.order-container {
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    background-color: #f6f7fe;
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.order-text p {
+    line-height: 1.75;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+
+.product-detail-container p {
+    margin: 0;
+}
+
+.plan-type p {
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.price p {
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+}
+
+.link-container a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.link-container a:hover {
+    text-decoration: none;
+    color: #5f53a5;
+}
+
+.payment-btn {
+    background-color: #2900d9;
+    color: white;
+    border-radius: 10px;
+}
+
+.payment-btn:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn {
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn:hover {
+    color: black;
+}
+
+.order-header p {
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+}
+
+.order-container img{
+    padding-right: 20px
+}
+
+.link-container a {
+    font-size: 14px; 
+}
+
+button {
+    width: 100%;
+    height: 50px; 
+    border: none;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 943px) {
+    .card {
+        width: 328px;
+        max-width: 328px;
+        height: 566px;
+    }
+
+    .image-container img {
+        width: 328px;
+        max-width: 328px;
+    }
+
+    .order-header p {
+        margin-top: 0px;
+    }
+
+    .summary-container {
+        padding: 25px
+    }
+    
+
+    .order-container img{
+        height: 100%;
+    }
+
+    .link-container a {
+        padding-left: 44px; 
+    }
+
+    .payment-btn {
+        margin-top: 25px;
+    }
+
+    .cancel-btn {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 944px) {
+    .frame {
+        background-image: url('./images/pattern-background-desktop.svg');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .card {
+        width: 450px;
+        max-width: 450px;
+        height: 696px;
+        max-height: 696px;
+    }
+
+    .order-header p {
+        margin-top: 40px; 
+        font-size: 1.5rem;;
+    }
+
+    .summary-container {
+        padding: 0px 50px;
+    }
+
+    .link-container a {
+        padding-left: 94px; 
+    }
+
+    .payment-btn {
+        margin-top: 32px; 
+    }
+
+    .cancel-btn {
+        margin-top: 15px; 
+    }
+}
